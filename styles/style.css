@@ -1,1 +1,21 @@
-/* место для вашего кода */
+body {
+  background-color: #fff;
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 94px 50px;
+  font-size: 18px;
+}
+.header_menu {
+
+}
+.header_logo {
+  grid: 3/4;
+  width: 148px;
+  height: 105px;
+  
+}
+.header_logo_image {
+}
