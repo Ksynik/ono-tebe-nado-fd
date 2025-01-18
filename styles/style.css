@@ -12,7 +12,6 @@
   background-color: #ffffff;
   padding: 92px 50px 96px 50px;
   max-width: 1100px;
-  max-height: 293px;
 }
 .header__menu {
   font-size: 18px;
@@ -34,6 +33,10 @@
   text-decoration: none;
   list-style: none;
 }
+.header__link_active {
+  text-decoration: none;
+  list-style: none;
+}
 .header__logo {
   display: block;
   width: 148px;
@@ -47,20 +50,19 @@
 .address {
   width: 240px;
   font-style: normal;
-  line-height: 24px;
+  line-height: 24.3px;
   text-decoration-skip-ink: none;
-  justify-self: end;
   font-size: 18px;
-  margin-top: 25px;
+  text-underline-offset: 4px;
+  text-decoration: underline;
 }
 .header__address {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  justify-self: end;
+  text-decoration: none;
 }
 .text__address {
   text-decoration: none;
 }
-
 .cover {
   padding: 165px 50px 50px 50px;
   position: relative;
@@ -70,7 +72,6 @@
   z-index: 1;
   background-size: cover;
   max-width: 1100px;
-  max-height: 758px;
   margin-bottom: 180px;
 }
 .overlay {
@@ -141,9 +142,8 @@
 }
 
 .lots {
-  margin-right: 24px;
-  margin-left: 24px;
-  margin-bottom: 120px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 .lots__heading {
   font-size: 40px;
@@ -154,7 +154,7 @@
 }
 .lots__card-list {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 25px;
   list-style: none;
   color: #fff;
@@ -163,7 +163,7 @@
 .lots__card-list-item {
   position: relative;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
   z-index: 1;
 }
 .card__link {
@@ -220,14 +220,11 @@
   text-underline-offset: 4px;
   padding-left: 40px;
   padding-top: 30px;
-}
-.link {
   text-decoration-skip-ink: none;
 }
 .about {
   margin: 120px 24px 180px 24px;
   max-width: 1052px;
-  min-height: 595px;
   display: grid;
   grid-template-columns: 310px 1fr;
   padding-top: 35px;
@@ -264,7 +261,6 @@
   flex-direction: column;
   gap: 25px;
   max-width: 693px;
-  min-height: 312px;
   width: 100%;
 }
 
@@ -278,17 +274,8 @@
   background-color: rgb(255, 255, 255);
 }
 .footer__address {
-  max-width: 240px;
   justify-self: start;
-  line-height: 24.3px;
-  font-size: 18px;
-  font-style: normal;
-  text-decoration-skip-ink: none;
-  text-underline-offset: 4px;
-}
-.footer__text__address {
   text-decoration: none;
-  list-style: none;
 }
 .footer__menu {
   font-size: 18px;
@@ -324,3 +311,4 @@
   width: 48px;
   height: 48px;
 }
+
